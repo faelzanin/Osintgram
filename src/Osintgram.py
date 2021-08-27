@@ -1202,7 +1202,7 @@ class Osintgram:
                         'username': user['username'],
                         'full_name': user['full_name']
                     }
-                    if len(results) > 50000:
+                    if len(results) > 45000:
                         break
                     followers.append(u)
 
@@ -1240,7 +1240,7 @@ class Osintgram:
                 user = self.api.user_info(str(follow['id']))
                 if 'public_email' in user['user'] and user['user']['public_email']:
                     follow['email'] = user['user']['public_email']
-                    if len(results) > 50000:
+                    if len(results) > 45000:
                         break
                     results.append(follow)
 
