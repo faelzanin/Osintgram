@@ -1196,7 +1196,7 @@ class Osintgram:
             while next_max_id:
                 sys.stdout.write("\rCatched %i followers email" % len(followers))
                 sys.stdout.flush()
-                sys.stdout.write("\r next_max_id = %i" % next_max_id)
+                sys.stdout.write("\r next_max_id = %s" % next_max_id)
                 sys.stdout.flush()
                 results = self.api.user_followers(str(self.target_id), rank_token=rank_token, max_id=next_max_id)
                 
