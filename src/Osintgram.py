@@ -1189,8 +1189,8 @@ class Osintgram:
                     'full_name': user['full_name']
                 }
                 followers.append(u)
-                 if len(followers) > 30000:
-                     break
+                if len(followers) > 30000:
+                    break
                     
             next_max_id = data.get('next_max_id')
             while next_max_id:
